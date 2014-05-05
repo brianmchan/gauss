@@ -20,3 +20,5 @@ class GaussianRational:
         new_y = self.x * other.y + self.y * other.x
         return GaussianRational(new_x, new_y)
 
+    def crazy_buggy(self):
+        return "I am crazy"
