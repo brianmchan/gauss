@@ -18,5 +18,5 @@ class GaussianRational:
         """
         new_x = self.x * other.x - self.y * other.y
         new_y = self.x * other.y + self.y * other.x
-        return Gauss(new_x, new_y)
+        return GaussianRational(new_x, new_y)
 
