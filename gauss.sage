@@ -11,4 +11,12 @@ class GaussianRational:
         return GaussianRational(self.x-right.x, self.y-right.y)
     def __crazy__(self, crazy):
         return 'I'm crazy'
+    
+    def __mul__(self, other):
+        """
+        Multiplication of two Gaussian rational numbers.
+        """
+        new_x = self.x * other.x - self.y * other.y
+        new_y = self.x * other.y + self.y * other.x
+        return Gauss(new_x, new_y)
 
